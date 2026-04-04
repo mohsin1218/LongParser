@@ -12,8 +12,11 @@
     <a href="https://pypi.org/project/longparser/">
       <img src="https://img.shields.io/pypi/v/longparser.svg?label=pypi&color=0078d4" alt="PyPI">
     </a>
-    <a href="https://pypi.org/project/longparser/">
-      <img src="https://img.shields.io/pypi/dm/longparser.svg?label=downloads&color=28a745" alt="Downloads">
+    <a href="https://pepy.tech/project/longparser">
+      <img src="https://static.pepy.tech/badge/longparser" alt="Total Downloads">
+    </a>
+    <a href="https://pepy.tech/project/longparser">
+      <img src="https://static.pepy.tech/badge/longparser/month" alt="Monthly Downloads">
     </a>
     <a href="https://www.python.org/">
       <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg" alt="Python">

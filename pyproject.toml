@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Privacy-first document intelligence engine — converts PDFs, DOCX, PPTX, XLSX, and CSV into AI-ready Markdown + structured JSON for RAG pipelines."
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "ENDEVSOLS Team", email = "dev@endevsols.com"},
 ]
@@ -21,7 +21,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
