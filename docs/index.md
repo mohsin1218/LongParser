@@ -1,12 +1,29 @@
-# LongParser
-
 <p align="center">
-  <strong>Privacy-first document intelligence engine for production RAG pipelines.</strong>
+  <!-- Logo goes here once ready -->
+  <h1 align="center">LongParser</h1>
+  <p align="center"><strong>Privacy-first document intelligence engine for production RAG pipelines.</strong></p>
+  <p align="center">Parse PDFs, DOCX, PPTX, XLSX &amp; CSV → validated, AI-ready chunks with HITL review.</p>
+  <p align="center">
+    <a href="https://github.com/ENDEVSOLS/LongParser/actions/workflows/ci.yml">
+      <img src="https://github.com/ENDEVSOLS/LongParser/actions/workflows/ci.yml/badge.svg" alt="CI">
+    </a>&nbsp;
+    <a href="https://pypi.org/project/longparser/">
+      <img src="https://img.shields.io/pypi/v/longparser.svg?label=pypi&color=0078d4" alt="PyPI">
+    </a>&nbsp;
+    <a href="https://pypi.org/project/longparser/">
+      <img src="https://img.shields.io/pypi/dm/longparser.svg?label=downloads&color=28a745" alt="Downloads">
+    </a>&nbsp;
+    <a href="https://www.python.org/">
+      <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg" alt="Python">
+    </a>&nbsp;
+    <a href="https://github.com/ENDEVSOLS/LongParser/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="MIT License">
+    </a>
+  </p>
 </p>
 
 ---
 
-**LongParser** transforms raw PDFs, DOCX, PPTX, XLSX, and CSV files into validated, AI-ready chunks — with a built-in Human-in-the-Loop (HITL) review layer, 3-layer memory chat engine, and a production FastAPI server.
 
 ## Why LongParser?
 

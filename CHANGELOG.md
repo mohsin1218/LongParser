@@ -45,8 +45,3 @@ for production RAG pipelines.
 - **`Dockerfile`** and **`docker-compose.yml`** for one-command local deployment
 - **`CONTRIBUTING.md`**, **`SECURITY.md`**, **`.env.example`** — full OSS scaffolding
 
----
-
-## [Pre-release] — 2024–2026
-
-Internal `clean-rag` development versions. Not publicly available.

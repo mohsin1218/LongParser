@@ -1,15 +1,34 @@
-# LongParser
-
-> **Privacy-first document intelligence engine for RAG pipelines.**
-
-[![CI](https://github.com/ENDEVSOLS/LongParser/actions/workflows/ci.yml/badge.svg)](https://github.com/ENDEVSOLS/LongParser/actions/workflows/ci.yml)
-[![PyPI version](https://img.shields.io/pypi/v/longparser.svg)](https://pypi.org/project/longparser/)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-LongParser converts complex documents — PDFs, DOCX, PPTX, XLSX, CSV — into AI-ready structured output via a 5-stage extraction pipeline, and exposes a production-ready REST API with Human-in-the-Loop (HITL) review.
+<p align="center">
+  <!-- Logo goes here once ready -->
+  <h1 align="center">LongParser</h1>
+  <p align="center"><strong>Privacy-first document intelligence engine for production RAG pipelines.</strong></p>
+  <p align="center">
+    Parse PDFs, DOCX, PPTX, XLSX &amp; CSV → validated, AI-ready chunks with HITL review.
+  </p>
+  <p align="center">
+    <a href="https://github.com/ENDEVSOLS/LongParser/actions/workflows/ci.yml">
+      <img src="https://github.com/ENDEVSOLS/LongParser/actions/workflows/ci.yml/badge.svg" alt="CI">
+    </a>
+    <a href="https://pypi.org/project/longparser/">
+      <img src="https://img.shields.io/pypi/v/longparser.svg?label=pypi&color=0078d4" alt="PyPI">
+    </a>
+    <a href="https://pypi.org/project/longparser/">
+      <img src="https://img.shields.io/pypi/dm/longparser.svg?label=downloads&color=28a745" alt="Downloads">
+    </a>
+    <a href="https://www.python.org/">
+      <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg" alt="Python">
+    </a>
+    <a href="LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="MIT License">
+    </a>
+    <a href="https://endevsols.github.io/LongParser/">
+      <img src="https://img.shields.io/badge/docs-online-indigo.svg" alt="Docs">
+    </a>
+  </p>
+</p>
 
 ---
+
 
 ## Features
 
