@@ -396,7 +396,7 @@ def _chunk_table(block: Block, config: ChunkingConfig) -> list[Chunk]:
         ))
         return chunks
 
-    n_rows = table.n_rows
+    _n_rows = table.n_rows
     n_cols = table.n_cols
     
     # Fix B: Build ordered grid

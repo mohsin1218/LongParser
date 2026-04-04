@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import pytest
 
-from longparser.api.llm_chain import DEFAULT_MODELS, SUPPORTED_PROVIDERS, get_chat_model, get_plain_chat_model
-from longparser.api.chat_schemas import ChatConfig
+pytest.importorskip("langchain_core", reason="langchain_core not installed — run: pip install longparser[server]")
+
+from longparser.server.chat.llm_chain import DEFAULT_MODELS, SUPPORTED_PROVIDERS, get_chat_model  # noqa: E402
+from longparser.server.chat.schemas import ChatConfig  # noqa: E402
 
 
 class TestDefaultModels:
@@ -55,14 +57,11 @@ class TestChatConfig:
 
     def test_config_provides_defaults(self):
         cfg = ChatConfig(llm_provider="openai", llm_model="gpt-4o-mini")
-        # Does not raise — validates that config is accepted
         assert cfg.llm_provider == "openai"
         assert cfg.llm_model == "gpt-4o-mini"
 
     def test_model_fallback_chain(self):
         """Provider default is used when config has no model."""
         cfg = ChatConfig(llm_provider="openai", llm_model=None)
-        # get_chat_model resolves: explicit > config > DEFAULT_MODELS
-        # We verify the resolution logic, not the actual LLM call
         resolved = None or cfg.llm_model or DEFAULT_MODELS.get("openai", "gpt-4o")
         assert resolved == "gpt-4o"

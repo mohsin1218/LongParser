@@ -672,7 +672,7 @@ async def finalize_job(
                 detail=f"{pending} item(s) still pending — approve or reject all before finalizing",
             )
     else:
-        affected = await db.apply_finalize_policy(
+        _affected = await db.apply_finalize_policy(
             tenant_id, job_id, body.finalize_policy
         )
 

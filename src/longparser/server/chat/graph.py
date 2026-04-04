@@ -152,7 +152,7 @@ async def start_hitl_review(
     }
 
     config = {"configurable": {"thread_id": thread_id}}
-    result = await hitl_graph.ainvoke(initial_state, config=config)
+    _result = await hitl_graph.ainvoke(initial_state, config=config)
 
     return {
         "thread_id": thread_id,
@@ -170,9 +170,7 @@ async def resume_hitl_review(
     """Resume a paused HITL flow with the human's decision."""
     config = {"configurable": {"thread_id": thread_id}}
 
-    result = await hitl_graph.ainvoke(
+    return await hitl_graph.ainvoke(
         Command(resume={"action": action, "edited_answer": edited_answer}),
         config=config,
     )
-
-    return result

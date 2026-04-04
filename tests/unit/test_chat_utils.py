@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import pytest
-from langchain_core.documents import Document
-from langchain_core.messages import AIMessage, HumanMessage
 
-from longparser.api.chat import budget_trim, count_tokens, validate_citations
-from longparser.api.chat_schemas import LLMAnswer
+pytest.importorskip("langchain_core", reason="langchain_core not installed — run: pip install longparser[server]")
+
+from langchain_core.documents import Document  # noqa: E402
+from langchain_core.messages import AIMessage, HumanMessage  # noqa: E402
+
+from longparser.server.chat.engine import budget_trim, count_tokens, validate_citations  # noqa: E402
+from longparser.server.chat.schemas import LLMAnswer  # noqa: E402
 
 
 # ---------------------------------------------------------------------------

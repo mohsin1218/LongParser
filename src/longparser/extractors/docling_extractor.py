@@ -253,7 +253,7 @@ class DoclingExtractor(BaseExtractor):
                         
                         # Order-based substitution with alignment gate
                         injected = 0
-                        non_omml = 0
+                        _non_omml = 0
                         for block, latex in zip(formula_blocks, latex_eqs):
                             orig_len = len(block.text.strip()) if block.text else 0
                             latex_len = len(latex.strip())
@@ -286,13 +286,13 @@ class DoclingExtractor(BaseExtractor):
             # If mode="full", this is the FULL pass (enrichment enabled).
             start_time = time.time()
             result = self._converter.convert(str(file_path))
-            duration = time.time() - start_time
+            _duration = time.time() - start_time
             
             # If not smart mode, we are done (Full or Fast)
             if config.formula_mode != "smart":
                 # Apply normalization if Fast mode (to make unicode math nicer)
                 if config.formula_mode == "fast":
-                    keys = list(result.document.pages.keys()) # snapshot keys
+                    _keys = list(result.document.pages.keys())  # snapshot (unused; iteration below)
                     for _, page in result.document.pages.items():
                          # Iterate all items on page
                          # We can't easily modify text in-place efficiently without iterating items
