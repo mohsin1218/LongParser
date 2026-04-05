@@ -1,6 +1,5 @@
 <p align="center">
-  <!-- Logo goes here once ready -->
-  <h1 align="center">LongParser</h1>
+  <img src="https://raw.githubusercontent.com/ENDEVSOLS/LongParser/main/docs/assets/logo.png" alt="LongParser" width="320">
   <p align="center"><strong>Privacy-first document intelligence engine for production RAG pipelines.</strong></p>
   <p align="center">Parse PDFs, DOCX, PPTX, XLSX &amp; CSV → validated, AI-ready chunks with HITL review.</p>
   <p align="center">
