@@ -26,14 +26,22 @@ class RedactionReport:
 
     def summary(self) -> str:
         parts = []
-        if self.emails: parts.append(f"{self.emails} emails")
-        if self.phones: parts.append(f"{self.phones} phones")
-        if self.ssns: parts.append(f"{self.ssns} SSNs")
-        if self.credit_cards: parts.append(f"{self.credit_cards} CCs")
-        if self.ip_addresses: parts.append(f"{self.ip_addresses} IPs")
-        if self.names: parts.append(f"{self.names} names")
-        if self.organizations: parts.append(f"{self.organizations} orgs")
-        if self.locations: parts.append(f"{self.locations} locs")
+        if self.emails:
+            parts.append(f"{self.emails} emails")
+        if self.phones:
+            parts.append(f"{self.phones} phones")
+        if self.ssns:
+            parts.append(f"{self.ssns} SSNs")
+        if self.credit_cards:
+            parts.append(f"{self.credit_cards} CCs")
+        if self.ip_addresses:
+            parts.append(f"{self.ip_addresses} IPs")
+        if self.names:
+            parts.append(f"{self.names} names")
+        if self.organizations:
+            parts.append(f"{self.organizations} orgs")
+        if self.locations:
+            parts.append(f"{self.locations} locs")
         return ", ".join(parts) if parts else "No PII found"
 
 _nlp_models: dict = {}
@@ -48,7 +56,7 @@ def _get_nlp(model_name: str):
         except ImportError:
             logger.warning("spaCy not installed. NER redaction disabled. Run: uv add spacy")
             return None
-        except Exception as e:
+        except Exception:
             logger.warning(f"Failed to load spaCy model '{model_name}'. Run: python -m spacy download {model_name}")
             return None
     return _nlp_models[model_name]
